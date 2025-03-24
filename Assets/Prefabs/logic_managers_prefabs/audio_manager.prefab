@@ -99,3 +99,9 @@ MonoBehaviour:
     pitch: 2
     loop: 1
     source: {fileID: 0}
+  - name: poison
+    clip: {fileID: 8300000, guid: 37ab1adacdc6169428bdfd4bfb77407c, type: 3}
+    volume: 0.676
+    pitch: 2.32
+    loop: 0
+    source: {fileID: 0}

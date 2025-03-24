@@ -34,7 +34,7 @@ public class ObjectClickHandler : MonoBehaviour
         PlayVFX();
     }
 
-    private void PlayAnimation()
+    public void PlayAnimation()
     {
         if (animator != null)
         {
@@ -42,7 +42,7 @@ public class ObjectClickHandler : MonoBehaviour
         }
     }
 
-    private void PlayVFX()
+    public void PlayVFX()
     {
         if (particlePrefab != null && isVFXPlay == false)
         {
