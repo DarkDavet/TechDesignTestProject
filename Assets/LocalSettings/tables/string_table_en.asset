@@ -58,6 +58,14 @@ MonoBehaviour:
     m_Localized: campfire
     m_Metadata:
       m_Items: []
+  - m_Id: 239684405850112
+    m_Localized: Project
+    m_Metadata:
+      m_Items: []
+  - m_Id: 239880753803264
+    m_Localized: '"Split Deception"'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

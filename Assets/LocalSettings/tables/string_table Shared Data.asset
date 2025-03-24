@@ -55,6 +55,14 @@ MonoBehaviour:
     m_Key: campfire_object_name
     m_Metadata:
       m_Items: []
+  - m_Id: 239684405850112
+    m_Key: project_word
+    m_Metadata:
+      m_Items: []
+  - m_Id: 239880753803264
+    m_Key: project_title
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
