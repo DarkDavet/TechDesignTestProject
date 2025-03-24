@@ -5,21 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    [SerializeField] private AudioManager audioManager;
     public void LoadLevel1Scene()
     {
-        AudioManager.Instance.Play("button_apply");
+        audioManager.Play("button_apply");
         StartCoroutine(LoadAndStartLevel1());
     }
 
     public void LoadLevel2Scene()
     {
-        AudioManager.Instance.Play("button_apply");
+        audioManager.Play("button_apply");
         StartCoroutine(LoadAndStartLevel2());
     }
 
     public void LoadMainMenuScene()
     {
-        AudioManager.Instance.Play("button_decline");
+        audioManager.Play("button_decline");
         StartCoroutine(LoadAndStartMainMenu());
     }
     private IEnumerator LoadAndStartLevel1()

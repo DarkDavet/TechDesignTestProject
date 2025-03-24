@@ -3,13 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : Singleton<AudioManager>
+public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -34,7 +33,36 @@ public class AudioManager : Singleton<AudioManager>
 
     public void Stop(string name)
     {
+        if (sounds == null)
+        {
+            Debug.LogWarning("Sounds array is null! Cannot stop sound.");
+            return;
+        }
+
         Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null || s.source == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found or source is null!");
+            return;
+        }
         s.source.Stop();
+    }
+
+    public void Cleanup()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.source != null)
+            {
+                s.source.Stop();
+                Destroy(s.source);
+            }
+        }
+        sounds = null; 
+    }
+
+    private void OnDestroy()
+    {
+        Cleanup(); 
     }
 }

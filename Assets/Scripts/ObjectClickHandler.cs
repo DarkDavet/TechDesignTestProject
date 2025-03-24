@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectClickHandler : MonoBehaviour
 {
     [SerializeField] private GameObject particlePrefab;
+    [SerializeField] private AudioManager audioManager;
     [SerializeField] private bool isLoop;
     [SerializeField] private string animationName;
     [SerializeField] private string audioName;
@@ -28,7 +29,7 @@ public class ObjectClickHandler : MonoBehaviour
 
     private void OnMouseDown()
     {
-        AudioManager.Instance.Play(audioName);
+        audioManager.Play(audioName);
         PlayAnimation();
         PlayVFX();
     }
@@ -57,7 +58,7 @@ public class ObjectClickHandler : MonoBehaviour
             {
                 isVFXPlay = true;
                 particle.Play();
-                AudioManager.Instance.Play("campfire_ambient");
+                audioManager.Play("campfire_ambient");
             }
         }
 
@@ -66,12 +67,12 @@ public class ObjectClickHandler : MonoBehaviour
             Destroy(particleInstance);
             particle = null;
             isVFXPlay = false;
-            AudioManager.Instance.Stop("campfire_ambient");
+            audioManager.Stop("campfire_ambient");
         }
     }
 
     private void OnDestroy()
     {
-        AudioManager.Instance.Stop("campfire_ambient");
+        audioManager.Stop("campfire_ambient");
     }
 }

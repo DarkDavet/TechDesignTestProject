@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class LevelEntryPoint : MonoBehaviour
 {
+    [SerializeField] private AudioManager audioManager;
     [SerializeField] private string audioName;
-    void Start()
+    private void Start()
     {
-        AudioManager.Instance.Play(audioName);
-    }
-    private void OnDestroy()
-    {
-        AudioManager.Instance.Stop(audioName);
+        audioManager.Play(audioName);
     }
 }
