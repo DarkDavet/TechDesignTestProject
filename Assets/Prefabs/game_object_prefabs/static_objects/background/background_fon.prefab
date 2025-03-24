@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7321471284238861253}
   - component: {fileID: 7846540478328353030}
   m_Layer: 0
-  m_Name: sky
+  m_Name: background_fon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

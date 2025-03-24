@@ -30,6 +30,34 @@ MonoBehaviour:
     m_Localized: Exit
     m_Metadata:
       m_Items: []
+  - m_Id: 218985536581632
+    m_Localized: 'Objects to interact:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219848212639744
+    m_Localized: angel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219989317414912
+    m_Localized: skeleton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220157303484416
+    m_Localized: crystal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220328024240128
+    m_Localized: crystals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220449612918784
+    m_Localized: air islands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220654500474880
+    m_Localized: campfire
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

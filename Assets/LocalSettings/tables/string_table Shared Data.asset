@@ -27,6 +27,34 @@ MonoBehaviour:
     m_Key: exit
     m_Metadata:
       m_Items: []
+  - m_Id: 218985536581632
+    m_Key: list_to_interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219848212639744
+    m_Key: angel_character_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219989317414912
+    m_Key: skeleton_character_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220157303484416
+    m_Key: crystal_object_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220328024240128
+    m_Key: crystals_objects_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220449612918784
+    m_Key: islands_objects_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220654500474880
+    m_Key: campfire_object_name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
