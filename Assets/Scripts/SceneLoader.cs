@@ -7,16 +7,19 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadLevel1Scene()
     {
+        AudioManager.Instance.Play("button_apply");
         StartCoroutine(LoadAndStartLevel1());
     }
 
     public void LoadLevel2Scene()
     {
+        AudioManager.Instance.Play("button_apply");
         StartCoroutine(LoadAndStartLevel2());
     }
 
     public void LoadMainMenuScene()
     {
+        AudioManager.Instance.Play("button_decline");
         StartCoroutine(LoadAndStartMainMenu());
     }
     private IEnumerator LoadAndStartLevel1()

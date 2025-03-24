@@ -7,6 +7,7 @@ public class ObjectClickHandler : MonoBehaviour
     [SerializeField] private GameObject particlePrefab;
     [SerializeField] private bool isLoop;
     [SerializeField] private string animationName;
+    [SerializeField] private string audioName;
     private bool isVFXPlay;
     private Animator animator;
 
@@ -27,6 +28,7 @@ public class ObjectClickHandler : MonoBehaviour
 
     private void OnMouseDown()
     {
+        AudioManager.Instance.Play(audioName);
         PlayAnimation();
         PlayVFX();
     }
@@ -55,6 +57,7 @@ public class ObjectClickHandler : MonoBehaviour
             {
                 isVFXPlay = true;
                 particle.Play();
+                AudioManager.Instance.Play("campfire_ambient");
             }
         }
 
@@ -63,6 +66,12 @@ public class ObjectClickHandler : MonoBehaviour
             Destroy(particleInstance);
             particle = null;
             isVFXPlay = false;
+            AudioManager.Instance.Stop("campfire_ambient");
         }
+    }
+
+    private void OnDestroy()
+    {
+        AudioManager.Instance.Stop("campfire_ambient");
     }
 }

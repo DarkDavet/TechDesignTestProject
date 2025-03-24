@@ -14,6 +14,7 @@ public class FairyAnimController : MonoBehaviour
 
     private void OnMouseDown()
     {
+        AudioManager.Instance.Play("fly");
         PlayAnimation(0, "swing", false);
         AddToQueue(0, "wings-and-feet", true, 0f);
     }

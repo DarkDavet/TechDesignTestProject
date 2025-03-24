@@ -1561,6 +1561,105 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329200375}
   m_CullTransparentMesh: 1
+--- !u!1 &1393245084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393245086}
+  - component: {fileID: 1393245085}
+  m_Layer: 0
+  m_Name: audio_manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1393245085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393245084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60fae034947af34b9bce33b4276859d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: button_apply
+    clip: {fileID: 8300000, guid: 238674143e5a23a42af72d401ba3c32c, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: button_decline
+    clip: {fileID: 8300000, guid: 64e52290d132aa54fa63f6b4b62dc4c4, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: crystal_activate
+    clip: {fileID: 8300000, guid: 07b82ccc8d6b77340bffeafdbef445bf, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: set_fire
+    clip: {fileID: 8300000, guid: fd17db35f92734d4e94a4a5df604c1fd, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: fly
+    clip: {fileID: 8300000, guid: 0a290bea7752e604f94e27d32e51a05b, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: hit
+    clip: {fileID: 8300000, guid: 3638cc91bba6b6043805fdc29285c28c, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: wind_ambient
+    clip: {fileID: 8300000, guid: 245a9504969b4d64a84a99588cb3fe90, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 1
+    source: {fileID: 0}
+  - name: campfire_ambient
+    clip: {fileID: 8300000, guid: 4966bf0a1016d174ab9424238f2794ff, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 1
+    source: {fileID: 0}
+  - name: forest_ambient
+    clip: {fileID: 8300000, guid: c369767e62aa0b648bdc75002b83ba10, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 1
+    source: {fileID: 0}
+--- !u!4 &1393245086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393245084}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1831.8026, y: 964.315, z: -1.2293732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397309828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,7 +1851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5320754, g: 0.5320754, b: 0.5320754, a: 0.27450982}
+  m_Color: {r: 0.5320754, g: 0.5320754, b: 0.5320754, a: 0.46666667}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2663,3 +2762,4 @@ SceneRoots:
   - {fileID: 1249246665}
   - {fileID: 1496131560}
   - {fileID: 1245474996}
+  - {fileID: 1393245086}
